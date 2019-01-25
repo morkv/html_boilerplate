@@ -1,0 +1,20 @@
+<% var data = {
+  title: "Стартер | Проект"
+}; %>
+<!-- [INCLUDE HEAD] -->
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+  <body>
+    <div class="content content_linen">
+      <!-- [INCLUDE HEADER] -->
+      <%= require('./../includes/header.html') %>
+
+      <!-- [SLIDER] -->
+      <div class="slider"></div>
+
+      <!-- [INCLUDE FOOTER] -->
+      <%= require('./../includes/footer.html') %>
+    </div>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

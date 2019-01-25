@@ -1,0 +1,44 @@
+<% var data = {
+  title: "Secondary | project"
+}; %>
+<!-- [INCLUDE HEAD] -->
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+  <body>
+    <div class="content">
+      <!-- [INCLUDE HEADER] -->
+      <%= require('./../includes/header.html') %>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <h1 style="margin-top: 160px;">Do not use "display: none;" for images!</h1>
+          </div>
+        </div>
+        <div class="rov">
+          <div class="col-12">
+            <!-- <picture>
+              <source srcset="blog-10-wide@1x.webp 1x,
+                              blog-10-wide@2x.webp 2x"
+                      media="(min-width: 600px)"
+                      type="image/webp">
+              <source srcset="blog-10-wide@1x.png 1x,
+                              blog-10-wide@2x.png 2x"
+                      media="(min-width: 600px)">
+              <source srcset="blog-10-square@1x.webp 1x,
+                              blog-10-square@2x.webp 2x"
+                      type="image/webp">
+              <img src="blog-10-square@1x.png"
+                    srcset="blog-10-square@2x.png 2x"
+                    alt="Девушка пьёт кофе">    
+            </picture> -->
+          </div>
+        </div>
+      </div>
+      <!-- [INCLUDE FOOTER] -->
+      <%= require('./../includes/footer.html') %>
+    </div>
+    <!-- [SCRIPTS] -->
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
