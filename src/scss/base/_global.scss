@@ -27,7 +27,6 @@ a {
   }
 }
 
-button {outline: none;}
 
 iframe {
   border: none;
@@ -141,16 +140,6 @@ iframe[seamless] {
     width: 68px;
     height: 48px;
     background-color: transparent !important;
-    &:focus {
-      .video__btn linearGradient {
-        stop[offset="0"] {
-          stop-color: #E52D27;
-        }
-        stop[offset="1"] {
-          stop-color: #BF171D;
-        }
-      }
-    }
   }
   .video__btn linearGradient {
     stop[offset="0"] {
@@ -167,6 +156,18 @@ iframe[seamless] {
       }
       stop[offset="1"] {
         stop-color: #BF171D;
+      }
+    }
+  }
+  &__btn {
+    &:focus {
+      linearGradient {
+        stop[offset="0"] {
+          stop-color: #E52D27;
+        }
+        stop[offset="1"] {
+          stop-color: #BF171D;
+        }
       }
     }
   }
